@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		415C639B1CECC824005F81E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C639A1CECC824005F81E4 /* AppDelegate.swift */; };
+		415C639D1CECC824005F81E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C639C1CECC824005F81E4 /* ViewController.swift */; };
+		415C63A01CECC824005F81E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415C639E1CECC824005F81E4 /* Main.storyboard */; };
+		415C63A21CECC824005F81E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415C63A11CECC824005F81E4 /* Assets.xcassets */; };
+		415C63A51CECC824005F81E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415C63A31CECC824005F81E4 /* LaunchScreen.storyboard */; };
+		415C63B01CECC824005F81E4 /* RtspClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C63AF1CECC824005F81E4 /* RtspClientTests.swift */; };
+		415C63BB1CECC824005F81E4 /* RtspClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C63BA1CECC824005F81E4 /* RtspClientUITests.swift */; };
+		415C63DC1CECCD69005F81E4 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C63D71CECCD69005F81E4 /* AudioStreamer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		415C63DD1CECCD69005F81E4 /* RTSPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C63D91CECCD69005F81E4 /* RTSPPlayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		415C63DE1CECCD69005F81E4 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C63DB1CECCD69005F81E4 /* Utilities.m */; };
+		415C63E01CECCFF3005F81E4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63DF1CECCFF3005F81E4 /* libz.tbd */; };
+		415C63E21CECCFFA005F81E4 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E11CECCFFA005F81E4 /* libiconv.tbd */; };
+		415C63E41CECD001005F81E4 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E31CECD001005F81E4 /* libbz2.tbd */; };
+		415C63EC1CECD063005F81E4 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E51CECD063005F81E4 /* libavcodec.a */; };
+		415C63ED1CECD063005F81E4 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E61CECD063005F81E4 /* libavdevice.a */; };
+		415C63EE1CECD063005F81E4 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E71CECD063005F81E4 /* libavfilter.a */; };
+		415C63EF1CECD063005F81E4 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E81CECD063005F81E4 /* libavformat.a */; };
+		415C63F01CECD063005F81E4 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63E91CECD063005F81E4 /* libavutil.a */; };
+		415C63F11CECD063005F81E4 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63EA1CECD063005F81E4 /* libswresample.a */; };
+		415C63F21CECD063005F81E4 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415C63EB1CECD063005F81E4 /* libswscale.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		415C63AC1CECC824005F81E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 415C638F1CECC824005F81E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415C63961CECC824005F81E4;
+			remoteInfo = RtspClient;
+		};
+		415C63B71CECC824005F81E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 415C638F1CECC824005F81E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415C63961CECC824005F81E4;
+			remoteInfo = RtspClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		415C63971CECC824005F81E4 /* RtspClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RtspClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		415C639A1CECC824005F81E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		415C639C1CECC824005F81E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		415C639F1CECC824005F81E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		415C63A11CECC824005F81E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		415C63A41CECC824005F81E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		415C63A61CECC824005F81E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415C63AB1CECC824005F81E4 /* RtspClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RtspClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		415C63AF1CECC824005F81E4 /* RtspClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtspClientTests.swift; sourceTree = "<group>"; };
+		415C63B11CECC824005F81E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415C63B61CECC824005F81E4 /* RtspClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RtspClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		415C63BA1CECC824005F81E4 /* RtspClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RtspClientUITests.swift; sourceTree = "<group>"; };
+		415C63BC1CECC824005F81E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415C63D51CECCD69005F81E4 /* RtspClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RtspClient-Bridging-Header.h"; sourceTree = "<group>"; };
+		415C63D61CECCD69005F81E4 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = FFMpegDecoder/AudioStreamer.h; sourceTree = SOURCE_ROOT; };
+		415C63D71CECCD69005F81E4 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = FFMpegDecoder/AudioStreamer.m; sourceTree = SOURCE_ROOT; };
+		415C63D81CECCD69005F81E4 /* RTSPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTSPPlayer.h; path = FFMpegDecoder/RTSPPlayer.h; sourceTree = SOURCE_ROOT; };
+		415C63D91CECCD69005F81E4 /* RTSPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTSPPlayer.m; path = FFMpegDecoder/RTSPPlayer.m; sourceTree = SOURCE_ROOT; };
+		415C63DA1CECCD69005F81E4 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = FFMpegDecoder/Utilities.h; sourceTree = SOURCE_ROOT; };
+		415C63DB1CECCD69005F81E4 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = FFMpegDecoder/Utilities.m; sourceTree = SOURCE_ROOT; };
+		415C63DF1CECCFF3005F81E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		415C63E11CECCFFA005F81E4 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		415C63E31CECD001005F81E4 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		415C63E51CECD063005F81E4 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = FFMpegiOS/lib/libavcodec.a; sourceTree = "<group>"; };
+		415C63E61CECD063005F81E4 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = FFMpegiOS/lib/libavdevice.a; sourceTree = "<group>"; };
+		415C63E71CECD063005F81E4 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = FFMpegiOS/lib/libavfilter.a; sourceTree = "<group>"; };
+		415C63E81CECD063005F81E4 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = FFMpegiOS/lib/libavformat.a; sourceTree = "<group>"; };
+		415C63E91CECD063005F81E4 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = FFMpegiOS/lib/libavutil.a; sourceTree = "<group>"; };
+		415C63EA1CECD063005F81E4 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = FFMpegiOS/lib/libswresample.a; sourceTree = "<group>"; };
+		415C63EB1CECD063005F81E4 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = FFMpegiOS/lib/libswscale.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		415C63941CECC824005F81E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415C63EC1CECD063005F81E4 /* libavcodec.a in Frameworks */,
+				415C63ED1CECD063005F81E4 /* libavdevice.a in Frameworks */,
+				415C63EE1CECD063005F81E4 /* libavfilter.a in Frameworks */,
+				415C63EF1CECD063005F81E4 /* libavformat.a in Frameworks */,
+				415C63F01CECD063005F81E4 /* libavutil.a in Frameworks */,
+				415C63F11CECD063005F81E4 /* libswresample.a in Frameworks */,
+				415C63F21CECD063005F81E4 /* libswscale.a in Frameworks */,
+				415C63E41CECD001005F81E4 /* libbz2.tbd in Frameworks */,
+				415C63E21CECCFFA005F81E4 /* libiconv.tbd in Frameworks */,
+				415C63E01CECCFF3005F81E4 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415C63A81CECC824005F81E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415C63B31CECC824005F81E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		415C638E1CECC824005F81E4 = {
+			isa = PBXGroup;
+			children = (
+				415C63E51CECD063005F81E4 /* libavcodec.a */,
+				415C63E61CECD063005F81E4 /* libavdevice.a */,
+				415C63E71CECD063005F81E4 /* libavfilter.a */,
+				415C63E81CECD063005F81E4 /* libavformat.a */,
+				415C63E91CECD063005F81E4 /* libavutil.a */,
+				415C63EA1CECD063005F81E4 /* libswresample.a */,
+				415C63EB1CECD063005F81E4 /* libswscale.a */,
+				415C63E31CECD001005F81E4 /* libbz2.tbd */,
+				415C63E11CECCFFA005F81E4 /* libiconv.tbd */,
+				415C63DF1CECCFF3005F81E4 /* libz.tbd */,
+				415C63991CECC824005F81E4 /* RtspClient */,
+				415C63AE1CECC824005F81E4 /* RtspClientTests */,
+				415C63B91CECC824005F81E4 /* RtspClientUITests */,
+				415C63981CECC824005F81E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		415C63981CECC824005F81E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				415C63971CECC824005F81E4 /* RtspClient.app */,
+				415C63AB1CECC824005F81E4 /* RtspClientTests.xctest */,
+				415C63B61CECC824005F81E4 /* RtspClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		415C63991CECC824005F81E4 /* RtspClient */ = {
+			isa = PBXGroup;
+			children = (
+				415C63D61CECCD69005F81E4 /* AudioStreamer.h */,
+				415C63D71CECCD69005F81E4 /* AudioStreamer.m */,
+				415C63D81CECCD69005F81E4 /* RTSPPlayer.h */,
+				415C63D91CECCD69005F81E4 /* RTSPPlayer.m */,
+				415C63DA1CECCD69005F81E4 /* Utilities.h */,
+				415C63DB1CECCD69005F81E4 /* Utilities.m */,
+				415C639A1CECC824005F81E4 /* AppDelegate.swift */,
+				415C639C1CECC824005F81E4 /* ViewController.swift */,
+				415C639E1CECC824005F81E4 /* Main.storyboard */,
+				415C63A11CECC824005F81E4 /* Assets.xcassets */,
+				415C63A31CECC824005F81E4 /* LaunchScreen.storyboard */,
+				415C63A61CECC824005F81E4 /* Info.plist */,
+				415C63D51CECCD69005F81E4 /* RtspClient-Bridging-Header.h */,
+			);
+			path = RtspClient;
+			sourceTree = "<group>";
+		};
+		415C63AE1CECC824005F81E4 /* RtspClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				415C63AF1CECC824005F81E4 /* RtspClientTests.swift */,
+				415C63B11CECC824005F81E4 /* Info.plist */,
+			);
+			path = RtspClientTests;
+			sourceTree = "<group>";
+		};
+		415C63B91CECC824005F81E4 /* RtspClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				415C63BA1CECC824005F81E4 /* RtspClientUITests.swift */,
+				415C63BC1CECC824005F81E4 /* Info.plist */,
+			);
+			path = RtspClientUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		415C63961CECC824005F81E4 /* RtspClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415C63BF1CECC824005F81E4 /* Build configuration list for PBXNativeTarget "RtspClient" */;
+			buildPhases = (
+				415C63931CECC824005F81E4 /* Sources */,
+				415C63941CECC824005F81E4 /* Frameworks */,
+				415C63951CECC824005F81E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RtspClient;
+			productName = RtspClient;
+			productReference = 415C63971CECC824005F81E4 /* RtspClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		415C63AA1CECC824005F81E4 /* RtspClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415C63C21CECC824005F81E4 /* Build configuration list for PBXNativeTarget "RtspClientTests" */;
+			buildPhases = (
+				415C63A71CECC824005F81E4 /* Sources */,
+				415C63A81CECC824005F81E4 /* Frameworks */,
+				415C63A91CECC824005F81E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				415C63AD1CECC824005F81E4 /* PBXTargetDependency */,
+			);
+			name = RtspClientTests;
+			productName = RtspClientTests;
+			productReference = 415C63AB1CECC824005F81E4 /* RtspClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		415C63B51CECC824005F81E4 /* RtspClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415C63C51CECC824005F81E4 /* Build configuration list for PBXNativeTarget "RtspClientUITests" */;
+			buildPhases = (
+				415C63B21CECC824005F81E4 /* Sources */,
+				415C63B31CECC824005F81E4 /* Frameworks */,
+				415C63B41CECC824005F81E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				415C63B81CECC824005F81E4 /* PBXTargetDependency */,
+			);
+			name = RtspClientUITests;
+			productName = RtspClientUITests;
+			productReference = 415C63B61CECC824005F81E4 /* RtspClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		415C638F1CECC824005F81E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andres Rojas";
+				TargetAttributes = {
+					415C63961CECC824005F81E4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					415C63AA1CECC824005F81E4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 415C63961CECC824005F81E4;
+					};
+					415C63B51CECC824005F81E4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 415C63961CECC824005F81E4;
+					};
+				};
+			};
+			buildConfigurationList = 415C63921CECC824005F81E4 /* Build configuration list for PBXProject "RtspClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 415C638E1CECC824005F81E4;
+			productRefGroup = 415C63981CECC824005F81E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				415C63961CECC824005F81E4 /* RtspClient */,
+				415C63AA1CECC824005F81E4 /* RtspClientTests */,
+				415C63B51CECC824005F81E4 /* RtspClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		415C63951CECC824005F81E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415C63A51CECC824005F81E4 /* LaunchScreen.storyboard in Resources */,
+				415C63A21CECC824005F81E4 /* Assets.xcassets in Resources */,
+				415C63A01CECC824005F81E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415C63A91CECC824005F81E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415C63B41CECC824005F81E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		415C63931CECC824005F81E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415C639D1CECC824005F81E4 /* ViewController.swift in Sources */,
+				415C63DD1CECCD69005F81E4 /* RTSPPlayer.m in Sources */,
+				415C639B1CECC824005F81E4 /* AppDelegate.swift in Sources */,
+				415C63DC1CECCD69005F81E4 /* AudioStreamer.m in Sources */,
+				415C63DE1CECCD69005F81E4 /* Utilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415C63A71CECC824005F81E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415C63B01CECC824005F81E4 /* RtspClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415C63B21CECC824005F81E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415C63BB1CECC824005F81E4 /* RtspClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		415C63AD1CECC824005F81E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415C63961CECC824005F81E4 /* RtspClient */;
+			targetProxy = 415C63AC1CECC824005F81E4 /* PBXContainerItemProxy */;
+		};
+		415C63B81CECC824005F81E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415C63961CECC824005F81E4 /* RtspClient */;
+			targetProxy = 415C63B71CECC824005F81E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		415C639E1CECC824005F81E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415C639F1CECC824005F81E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		415C63A31CECC824005F81E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415C63A41CECC824005F81E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		415C63BD1CECC824005F81E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		415C63BE1CECC824005F81E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		415C63C01CECC824005F81E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFMpegiOS/include/**";
+				INFOPLIST_FILE = RtspClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFMpegiOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RtspClient/RtspClient-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		415C63C11CECC824005F81E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/FFMpegiOS/include/**";
+				INFOPLIST_FILE = RtspClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFMpegiOS/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RtspClient/RtspClient-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		415C63C31CECC824005F81E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RtspClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RtspClient.app/RtspClient";
+			};
+			name = Debug;
+		};
+		415C63C41CECC824005F81E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RtspClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RtspClient.app/RtspClient";
+			};
+			name = Release;
+		};
+		415C63C61CECC824005F81E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RtspClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RtspClient;
+			};
+			name = Debug;
+		};
+		415C63C71CECC824005F81E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RtspClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.RtspClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RtspClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		415C63921CECC824005F81E4 /* Build configuration list for PBXProject "RtspClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415C63BD1CECC824005F81E4 /* Debug */,
+				415C63BE1CECC824005F81E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415C63BF1CECC824005F81E4 /* Build configuration list for PBXNativeTarget "RtspClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415C63C01CECC824005F81E4 /* Debug */,
+				415C63C11CECC824005F81E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		415C63C21CECC824005F81E4 /* Build configuration list for PBXNativeTarget "RtspClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415C63C31CECC824005F81E4 /* Debug */,
+				415C63C41CECC824005F81E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		415C63C51CECC824005F81E4 /* Build configuration list for PBXNativeTarget "RtspClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415C63C61CECC824005F81E4 /* Debug */,
+				415C63C71CECC824005F81E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 415C638F1CECC824005F81E4 /* Project object */;
+}
