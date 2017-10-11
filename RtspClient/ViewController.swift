@@ -17,21 +17,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        video = RTSPPlayer(video: "rtsp://admin:admin@192.168.150.243", usesTcp: false)
-        video.outputWidth = 426
-        video.outputHeight = 320
+        video = RTSPPlayer(video: "rtsp://flussonic-8.cams.ufanet.ru/1488517023?token=65336bc4b8bd4dc0a3708a978b4f5cc3", usesTcp: false)
+        video.outputWidth = Int32(UIScreen.main.bounds.width)
+        video.outputHeight = Int32(UIScreen.main.bounds.height)
         video.seekTime(0.0)
         
-        let timer = NSTimer.scheduledTimerWithTimeInterval(1.0/30, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+      let timer = Timer.scheduledTimer(timeInterval: 1.0/30, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         timer.fire()
     }
     
-    func update(timer: NSTimer) {
+  @objc func update(timer: Timer) {
         if(!video.stepFrame()){
             timer.invalidate()
             video.closeAudio()
         }
-        imageView.image=video.currentImage
+        imageView.image = video.currentImage
     }
 
     override func didReceiveMemoryWarning() {
