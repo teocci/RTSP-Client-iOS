@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        video = RTSPPlayer(video: "rtsp://flussonic-8.cams.ufanet.ru/1488517023?token=65336bc4b8bd4dc0a3708a978b4f5cc3", usesTcp: false)
+        video = RTSPPlayer(video: "rtsp://admin:admin@192.168.150.243", usesTcp: false)
         video.outputWidth = Int32(UIScreen.main.bounds.width)
         video.outputHeight = Int32(UIScreen.main.bounds.height)
         video.seekTime(0.0)
